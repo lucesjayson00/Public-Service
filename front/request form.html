@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarantee Letter Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #FF0000;
+            color: #fff;
+            text-align: center;
+            padding:1em 0;
+           
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="AM LOGO.png" alt="Company Logo" id="logo">
+        <h1>Guarantee Letter Request Form</h1>
+    </header>
+
+    <section>
+        <h2>Request Form</h2>
+        <form id="guaranteeForm" onsubmit="validateForm(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="hospital">Hospital Name:</label>
+            <input type="text" id="hospital" name="hospital" required>
+
+            <label for="assistance">Type of Assistance:</label>
+            <input type="text" id="assistance" name="assistance" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="diagnosis">Diagnosis:</label>
+            <textarea id="diagnosis" name="diagnosis" rows="4" required></textarea>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+
+            <label for="documents">Upload Documents:</label>
+            <input type="file" id="documents" name="documents" accept=".jpg, .jpeg, .png, .pdf" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <script>
+        function validateForm(event) {
+            // Basic form validation example
+            var form = document.getElementById('guaranteeForm');
+            var isValid = form.checkValidity();
+
+            if (!isValid) {
+                // Display error messages or take appropriate action
+                alert('Please fill out all required fields.');
+                event.preventDefault(); // Prevent form submission if validation fails
+            }
+            // Add additional validation as needed
+        }
+    </script>
+</body>
+
+</html>

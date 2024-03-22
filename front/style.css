@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+header{
+    background-color: #ff0000;
+    color: white;
+    padding-bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: auto;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+  background: #f12929;
+  height: 70px;
+  width: 100%;
+}
+nav ul{
+  float:right;
+  margin-right: 20px; 
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: rgb(243, 142, 142);
+  transition: .5s;
+}
+.IMGQC{
+  display:block;
+  float: right;
+}
+.AMLOGO{
+  float: right;
+}
+.CAM{
+  float:left;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color:white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+}
